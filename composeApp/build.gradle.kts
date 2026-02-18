@@ -52,6 +52,12 @@ kotlin {
         implementation(libs.kotlinx.datetime)
 
         testImplementation(libs.kotlin.test)
+        // Koin
+        implementation(projects.shared)
+        implementation(project.dependencies.platform(libs.koin.bom))
+        implementation(libs.koin.compose)
+        implementation(libs.koin.compose.viewmodel)
+        implementation(libs.koin.compose.viewmodel.navigation)
     }
 
     sourceSets {
