@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.androidMultiplatformLibrary)
     alias(libs.plugins.androidLint)
     alias(libs.plugins.sqlDelight)
+    alias(libs.plugins.mokkery)
 }
 
 kotlin {
@@ -70,7 +71,6 @@ kotlin {
                 implementation(libs.koin.core)
                 implementation(libs.koin.compose.viewmodel)
                 implementation(libs.kotlinx.coroutines.core)
-
                 // DateTime
                 implementation(libs.kotlinx.datetime)
 
