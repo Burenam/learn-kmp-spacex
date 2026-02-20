@@ -14,6 +14,8 @@ kotlin {
     }
 
     dependencies {
+        // Coroutine
+        implementation(libs.kotlinx.coroutines.android)
         implementation(projects.composeApp)
         implementation(projects.shared)
         implementation(libs.androidx.activity.compose)
